@@ -1,168 +1,197 @@
 <div align="center">
 
-# 🎓 Campus Store
+# ⚡ Campus Store
 
-**College essentials, one store.**  
-A polished, student-first e-commerce experience built with React, Vite and Firebase.
+**Everything campus. One store.**
 
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
-[![Firebase](https://img.shields.io/badge/Firebase-Auth-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES2024-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
-[![ESLint](https://img.shields.io/badge/ESLint-10-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=for-the-badge)](https://github.com/shivamkumar0097/campus-store/pulls)
+[![Live Site](https://img.shields.io/badge/Live%20Site-campus--storee.netlify.app-00c7b8?style=flat-square&logo=netlify&logoColor=white)](https://campus-storee.netlify.app)
+[![Netlify Status](https://img.shields.io/badge/Netlify-Deploy%20%23prod-00c7b8?style=flat-square&logo=netlify&logoColor=white)](https://app.netlify.com/projects/campus-storee)
+[![React](https://img.shields.io/badge/React-19-61dafb?style=flat-square&logo=react&logoColor=black)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-8-646cff?style=flat-square&logo=vite&logoColor=white)](https://vite.dev)
+[![Firebase](https://img.shields.io/badge/Firebase-Auth-ffca28?style=flat-square&logo=firebase&logoColor=black)](https://firebase.google.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-c8f75c?style=flat-square)](LICENSE)
 
-[![GitHub stars](https://img.shields.io/github/stars/shivamkumar0097/campus-store?style=flat-square&logo=github)](https://github.com/shivamkumar0097/campus-store/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/shivamkumar0097/campus-store?style=flat-square&logo=github)](https://github.com/shivamkumar0097/campus-store/network/members)
-[![Last commit](https://img.shields.io/github/last-commit/shivamkumar0097/campus-store?style=flat-square&logo=github)](https://github.com/shivamkumar0097/campus-store/commits/main)
+A student-first e-commerce storefront — stationery, tech, textbooks and college merch,
+hand-picked for campus life.
+
+[🚀 Live Demo](https://campus-storee.netlify.app) · [🐛 Report Issue](https://github.com/shivamkumar0097/campus-store/issues) · [💬 Discussions](https://github.com/shivamkumar0097/campus-store/discussions)
 
 </div>
 
 ---
 
-## 🛍️ Overview
-
-Campus Store is a single-page storefront for students — stationery, tech accessories, books and college merch in one place. It pairs a dark, high-contrast storefront with a real shopping flow: browse and filter the catalogue, open product pages with reviews and related items, save favourites to a wishlist, manage a cart, apply a student coupon and place an order.
-
-Authentication is handled by Firebase (email/password + Google), while cart and wishlist state is persisted per-user in `localStorage` — so your bag follows your account, not your browser tab.
-
-> 🎟️ Try coupon **`STUDENT15`** at checkout for 15% off.  
-> 🚚 Delivery is **free over ₹499**.
-
----
-
 ## 📸 Screenshots
 
-### Home & discovery
+### Landing page
 
-| Home hero | Full home page |
-| --- | --- |
-| ![Home hero](docs/screenshots/01-home-hero.png) | ![Full home page](docs/screenshots/02-home-full.png) |
+![Home page](docs/screenshots/01-home-hero.png)
 
-### Catalogue
+### Product catalogue — search, filter & sort
 
-| Browse | Search | Category filter |
-| --- | --- | --- |
-| ![Catalogue](docs/screenshots/03-catalogue.png) | ![Search results](docs/screenshots/04-catalogue-search.png) | ![Category filter](docs/screenshots/05-catalogue-category.png) |
+![Catalogue](docs/screenshots/03-catalogue.png)
 
-### Product & auth
+### Product detail with reviews
 
-| Product detail | Sign in / sign up | Signed in |
-| --- | --- | --- |
-| ![Product detail](docs/screenshots/06-product-detail.png) | ![Auth modal](docs/screenshots/07-auth-modal.png) | ![After sign in](docs/screenshots/09-after-signin.png) |
+![Product detail](docs/screenshots/06-product-detail.png)
 
-### Cart, checkout & wishlist
+### Cart & checkout
 
-| Cart | Checkout | Coupon applied |
-| --- | --- | --- |
-| ![Cart](docs/screenshots/10-cart.png) | ![Checkout](docs/screenshots/11-checkout.png) | ![Coupon](docs/screenshots/12-checkout-coupon.png) |
+| Cart | Checkout |
+|:--:|:--:|
+| ![Cart](docs/screenshots/10-cart.png) | ![Checkout](docs/screenshots/13-checkout-filled.png) |
 
-| Delivery details | Wishlist |
-| --- | --- |
-| ![Checkout filled](docs/screenshots/13-checkout-filled.png) | ![Wishlist](docs/screenshots/14-wishlist.png) |
+### Authentication & wishlist
+
+| Sign in | Wishlist |
+|:--:|:--:|
+| ![Auth modal](docs/screenshots/07-auth-modal.png) | ![Wishlist](docs/screenshots/14-wishlist.png) |
 
 ### Mobile
 
-<p align="center">
-  <img src="docs/screenshots/15-mobile-home.png" alt="Mobile home" width="320" />
-  <img src="docs/screenshots/16-mobile-catalogue.png" alt="Mobile catalogue" width="320" />
-</p>
+| Home | Catalogue |
+|:--:|:--:|
+| ![Mobile home](docs/screenshots/15-mobile-home.png) | ![Mobile catalogue](docs/screenshots/16-mobile-catalogue.png) |
 
 ---
 
 ## ✨ Features
 
-- **🗂️ Four curated categories** — Stationery, Tech Accessories, Books and College Merch.
-- **🔍 Fast catalogue** — instant search, category chips and sorting by popularity, price and rating.
-- **📦 Rich product pages** — gallery-style hero, feature list, ratings, reviews, quantity picker and related products.
-- **🔐 Firebase authentication** — email/password and Google sign-in, friendly error messages and a polished auth modal.
-- **🛒 Persistent cart & wishlist** — scoped per Firebase user and stored in `localStorage`; guests are prompted to sign in.
-- **🧾 Checkout flow** — delivery details, UPI / card / cash-on-delivery options, student coupon and order confirmation.
-- **🎉 Toast notifications** — lightweight feedback for add-to-cart, wishlist and auth actions.
-- **📱 Fully responsive** — sticky navigation, mobile drawer and layouts tuned for small screens.
-- **♿ Accessible by default** — semantic landmarks, labelled controls, focus-visible states and reduced-motion support.
+| | Feature | Details |
+|---|---|---|
+| 🛍️ | **Catalogue** | 20 products across 4 categories — Stationery, Tech Accessories, Books, College Merch |
+| 🔍 | **Live search** | Instant filter on product name or category, with clear button |
+| ↕️ | **Sorting** | Most popular · Price low→high · Price high→low · Top rated |
+| 🗂️ | **Category tabs** | Deep-linkable via `?category=`, shareable URLs |
+| 🛒 | **Cart** | Quantity stepper, remove, live subtotal + delivery logic |
+| 🎁 | **Free delivery meter** | Progress bar nudging "add ₹X more for free campus delivery" (₹499+) |
+| 💖 | **Wishlist** | Save any product with one tap, persisted per account |
+| 🔐 | **Auth** | Email/password + Google sign-in (Firebase Auth) |
+| 🧾 | **Checkout** | Delivery details, UPI/Card/COD, coupon `STUDENT15` (15% off), order confirmation |
+| 🔔 | **Toasts** | Custom toast system, `aria-live="polite"", auto-dismiss 2.6s |
+| 📱 | **Responsive** | Mobile drawer nav, fluid grids, 16px inputs (no iOS zoom) |
+| ♿ | **Accessible** | Focus rings, `prefers-reduced-motion`, ARIA roles on tabs/dialogs/toggles |
+| 🌗 | **Dark theme** | Lime `#c8f75c` on `#08080c`, violet secondary, per-category accent tints |
+| 🧭 | **Hash routing** | Zero-config static hosting — no server rewrite rules needed |
+
+---
+
+## 🛠️ Tech Stack
+
+```
+Frontend   React 19.3 · React DOM 19.3
+Build      Vite 8.3 · @vitejs/plugin-react 6.1
+Auth       Firebase 13.3 (Authentication only)
+Routing    Custom hash router (no react-router)
+State      React Context + useReducer-style providers
+Styling    Hand-written CSS (custom properties, no framework)
+Linting    ESLint 10 (flat config) + react-hooks + react-refresh
+```
+
+**Deliberately zero:** no UI library, no CSS framework, no state library, no router library,
+no backend of its own. Everything is hand-rolled to keep the bundle at **~118 kB gzipped**.
 
 ---
 
 ## 🏗️ Architecture
 
 ```mermaid
-flowchart TD
-    U([Student]) --> SPA[React SPA]
+graph TD
+    subgraph Browser["Browser"]
+        subgraph Entry["Entry"]
+            MAIN["main.jsx<br/>StrictMode · pinch-zoom guard"]
+            APP["App.jsx<br/>hash router · page switch"]
+        end
 
-    subgraph SPA["Campus Store (Vite)"]
-        R[Hash Router<br/>/#/products · /#/product/:id]
-        P[Pages<br/>Home · Products · ProductDetail<br/>Cart · Checkout · Wishlist]
-        C[Context Providers<br/>Auth · Cart · Wishlist · Toast]
-        D[Static Catalogue<br/>products.js · reviews.js]
+        subgraph Providers["Context Providers"]
+            TOAST["ToastProvider<br/>toast queue · 2600ms"]
+            AUTH["AuthProvider<br/>firebase auth · user state"]
+            SHOP["ShopProviders<br/>key = account uid"]
+            CART["CartProvider<br/>items · subtotal · shipping"]
+            WISH["WishlistProvider<br/>saved ids"]
+        end
+
+        subgraph Views["Views"]
+            NAV["Navbar<br/>nav · search · cart · user menu"]
+            HOME["Home"]
+            PROD["Products<br/>search · sort · tabs"]
+            DETAIL["ProductDetail<br/>qty · reviews · related"]
+            CARTP["Cart"]
+            CHECK["Checkout<br/>details · payment · coupon"]
+            WISHP["Wishlist"]
+            FOOT["Footer"]
+            MODAL["AuthModal<br/>google + email"]
+        end
+
+        subgraph Data["Data & Services"]
+            ROUTE["hooks/useHashRoute"]
+            FB["lib/firebase<br/>initializeApp · getAuth"]
+            PRODS["data/products<br/>20 items"]
+            REVS["data/reviews"]
+            LS[("localStorage<br/>campus-store-cart:uid<br/>campus-store-wishlist:uid")]
+        end
     end
 
-    C -->|cart + wishlist per uid| LS[(localStorage)]
-    C -->|sign in / sign up / sign out| FB[Firebase Authentication]
-    FB -->|onAuthStateChanged| C
-    R --> P
-    P --> C
-    P --> D
+    MAIN --> APP
+    APP --> TOAST --> AUTH --> SHOP
+    SHOP --> CART --> WISH
+    APP --> NAV & HOME & PROD & DETAIL & CARTP & CHECK & WISHP & FOOT
+    APP --> MODAL
+    APP --> ROUTE
+    AUTH --> FB
+    HOME & PROD & DETAIL & CARTP --> PRODS
+    DETAIL --> REVS
+    CART & WISH --> LS
+    NAV -.->|requires auth| MODAL
 ```
 
-### Checkout flow
+### Account-scoped providers
+
+The cart and wishlist providers are mounted with a **React `key` derived from the signed-in
+UID**. Changing accounts remounts both providers, so state re-hydrates from the new
+user's storage bucket — carts never leak between accounts.
 
 ```mermaid
 sequenceDiagram
-    autonumber
-    actor S as Student
-    participant UI as React UI
-    participant Cart as CartContext
-    participant Auth as AuthContext
-    participant FB as Firebase Auth
-    participant LS as localStorage
+    participant U as Student
+    participant N as Navbar / ProductCard
+    participant A as AuthContext
+    participant C as CartContext
+    participant L as localStorage
 
-    S->>UI: Add items to cart
-    UI->>Cart: addItem(product)
-    Cart->>LS: persist cart (uid-scoped)
-    S->>UI: Open checkout
-    UI->>Auth: require signed-in user
+    U->>N: Click "Add to cart"
+    N->>A: requireAuth()
     alt Not signed in
-        Auth-->>UI: show auth modal
-        S->>FB: sign in (email or Google)
-        FB-->>Auth: user session
+        A-->>N: throw → open AuthModal
+        U->>A: Sign in (email / Google)
+        A-->>N: user { uid }
     end
-    S->>UI: Enter delivery details + coupon
-    UI->>UI: apply STUDENT15 (−15%)
-    S->>UI: Choose payment + place order
-    UI->>Cart: clearCart()
-    Cart->>LS: clear persisted cart
-    UI-->>S: Order confirmation (24–48h delivery)
+    N->>C: addItem(product)
+    C->>C: setItems(items + qty)
+    C->>L: write campus-store-cart:uid
+    C-->>N: count, subtotal, shipping
 ```
 
-### Route map
+### Shopping flow
 
-| Route | Page | Purpose |
-| --- | --- | --- |
-| `/#/` | `Home` | Hero, categories, featured products, trust badges |
-| `/#/products` | `Products` | Full catalogue with search, filters and sorting |
-| `/#/product/:id` | `ProductDetail` | Product info, reviews, quantity, related items |
-| `/#/cart` | `Cart` | Cart items, quantity controls, free-delivery progress |
-| `/#/checkout` | `Checkout` | Delivery form, coupon, payment and confirmation |
-| `/#/wishlist` | `Wishlist` | Saved products |
+```mermaid
+flowchart LR
+    HOME["#/<br/>Landing"] --> SHOP["#/products<br/>Browse · search · sort"]
+    SHOP --> DETAIL["#/product/:id<br/>Details · reviews"]
+    DETAIL --> CART["#/cart<br/>Qty · totals"]
+    DETAIL --> WISH["#/wishlist<br/>Save for later"]
+    SHOP --> WISH
+    CART --> CHECKOUT["#/checkout<br/>Details · payment · coupon"]
+    CHECKOUT -->|Place order| DONE["Confirmation<br/>CS-XXXXXX · 24-48h"]
+    CHECKOUT -->|Back| CART
+    DONE --> HOME
+    WISH --> DETAIL
 
-> Routing is hash-based (`useHashRoute`) so the app can be hosted on any static host without server rewrites.
-
----
-
-## 🧰 Tech Stack
-
-| Layer | Choice |
-| --- | --- |
-| UI | React 19 |
-| Build tool | Vite 8 |
-| Language | JavaScript (ES modules, JSX) |
-| Auth | Firebase Authentication (`firebase/auth`) |
-| State | React Context + `useReducer`/`useState` |
-| Persistence | `localStorage` (per-user keys) |
-| Styling | Hand-written CSS with design tokens (`App.css`, `index.css`) |
-| Linting | ESLint 10 + React Hooks & Refresh plugins |
-| Fonts | Inter + Sora (Google Fonts) |
+    GUARD{"Signed in?"}
+    CART -.-> GUARD
+    CHECKOUT -.-> GUARD
+    GUARD -->|No| MODAL["AuthModal"]
+    MODAL -->|Success| GUARD
+```
 
 ---
 
@@ -170,10 +199,10 @@ sequenceDiagram
 
 ### Prerequisites
 
-- **Node.js 18+** and npm
-- A **Firebase project** with **Email/Password** and **Google** sign-in enabled
+- Node.js **18+**
+- A free [Firebase](https://console.firebase.google.com) project (only for sign-in)
 
-### 1. Clone and install
+### 1. Clone & install
 
 ```bash
 git clone https://github.com/shivamkumar0097/campus-store.git
@@ -183,107 +212,141 @@ npm install
 
 ### 2. Configure Firebase
 
-Create `.env.local` from the template:
-
 ```bash
 cp .env.example .env.local
 ```
 
-Fill in the values from **Firebase Console → Project settings → Your apps → Web app**:
+Firebase Console → **Project settings** → **Your apps** → **Web app** → *SDK setup and
+configuration* → paste the values into `.env.local`:
 
 ```env
-VITE_FIREBASE_API_KEY=...
-VITE_FIREBASE_AUTH_DOMAIN=...
-VITE_FIREBASE_PROJECT_ID=...
-VITE_FIREBASE_STORAGE_BUCKET=...
-VITE_FIREBASE_MESSAGING_SENDER_ID=...
-VITE_FIREBASE_APP_ID=...
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project.firebasestorage.app
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
 ```
 
-### 3. Run
+> **Tip:** the app works **without** Firebase — the catalogue, search, filters and product
+> pages all function. Only sign-in, cart, wishlist and checkout are gated. The auth modal
+> shows a *"Firebase setup needed"* banner when keys are missing.
+
+### 3. Enable sign-in providers
+
+In Firebase Console → **Authentication** → **Sign-in method**:
+
+- ✅ **Email/Password**
+- ✅ **Google** (add your deployment domain to *Authorized domains*)
+
+### 4. Run it
 
 ```bash
-npm run dev
+npm run dev      # http://localhost:5173
+npm run build    # production build → dist/
+npm run preview  # preview the production build
+npm run lint     # eslint
 ```
-
-Open the printed URL (usually `http://localhost:5173`).
-
-> Without Firebase keys the storefront still renders, but authentication actions will show a setup hint. Add the keys and restart the dev server.
-
-### Available scripts
-
-| Command | Description |
-| --- | --- |
-| `npm run dev` | Start the Vite dev server with HMR |
-| `npm run build` | Build a production bundle into `dist/` |
-| `npm run preview` | Preview the production build locally |
-| `npm run lint` | Run ESLint across the project |
 
 ---
 
 ## 📁 Project Structure
 
-```text
+```
 campus-store/
-├── docs/
-│   └── screenshots/          # README screenshots
 ├── public/
 │   ├── favicon.svg
-│   └── products/             # Product imagery
+│   └── products/              # 20 product photos
 ├── src/
-│   ├── components/           # Navbar, Footer, AuthModal, ProductCard, Icons
-│   ├── context/              # Auth, Cart, Wishlist and Toast providers
-│   ├── data/                 # Catalogue (products.js) and reviews
-│   ├── hooks/                # useHashRoute
-│   ├── lib/                  # Firebase initialization
-│   ├── pages/                # Home, Products, ProductDetail, Cart, Checkout, Wishlist
-│   ├── App.jsx               # Providers + route switch
-│   ├── App.css               # Component & layout styles
-│   ├── index.css             # Design tokens & base styles
-│   └── main.jsx              # Entry point
+│   ├── components/
+│   │   ├── AuthModal.jsx      # Split-panel sign in / sign up
+│   │   ├── Footer.jsx
+│   │   ├── Icons.jsx          # Inline SVG icon set
+│   │   ├── Navbar.jsx
+│   │   └── ProductCard.jsx
+│   ├── context/
+│   │   ├── AuthContext.jsx    # Firebase auth + friendly errors
+│   │   ├── CartContext.jsx    # Items, totals, localStorage
+│   │   ├── ToastContext.jsx   # Toast queue
+│   │   └── WishlistContext.jsx
+│   ├── data/
+│   │   ├── products.js        # Catalogue seed
+│   │   └── reviews.js         # Reviews per category
+│   ├── hooks/
+│   │   └── useHashRoute.js    # ~20-line hash router
+│   ├── lib/
+│   │   └── firebase.js        # init + graceful fallback
+│   ├── pages/
+│   │   ├── Cart.jsx
+│   │   ├── Checkout.jsx
+│   │   ├── Home.jsx
+│   │   ├── ProductDetail.jsx
+│   │   ├── Products.jsx
+│   │   └── Wishlist.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css              # Design tokens
+│   └── main.jsx
+├── docs/screenshots/          # README assets
 ├── .env.example
-├── index.html
-├── package.json
 └── vite.config.js
 ```
 
 ---
 
-## 🧠 Implementation Notes
+## 💡 Implementation Notes
 
-- **Per-user persistence** — `CartProvider` and `WishlistProvider` are keyed by the Firebase `uid`, so switching accounts swaps the cart/wishlist instantly while guests keep an empty bag.
-- **No backend required** — products and reviews are static modules; only auth touches the network. This keeps the demo fast and easy to host on GitHub Pages, Netlify or Vercel.
-- **Design system** — spacing, radii, shadows and color tokens live in `index.css`; components compose them in `App.css` with dark-mode-first styling.
-- **Error handling** — Firebase error codes are translated into human-readable messages (wrong password, weak password, blocked popup, unauthorized domain, etc.).
+**Persistence** — Cart and wishlist live in `localStorage`, keyed by the Firebase UID
+(`campus-store-cart:<uid>`). Reads are `try/catch`-guarded and fall back to `[]` on
+corrupt data. Nothing is written for signed-out users.
+
+**Shipping rules** — flat ₹49, free when the cart is empty or subtotal ≥ ₹499.
+`STUDENT15` applies a 15% discount to the subtotal, before shipping.
+
+**Checkout** — a client-side simulation. No payment gateway is integrated; placing an
+order generates a `CS-XXXXXX` reference, clears the cart and shows a confirmation screen.
+
+**Hash routing** — all routes are `#/…`, so the built `dist/` folder can be dropped onto
+GitHub Pages, Netlify or S3 with **no** SPA rewrite rule.
+
+**Accessibility** — `role="tablist"` category tabs, `aria-pressed` toggles, `aria-modal`
+auth dialog with Escape-to-close, `aria-live="polite"` toasts, visible focus rings, and a
+global `prefers-reduced-motion` override.
+
+**Responsive** — breakpoints at 1080px (grid columns), 900px (stacked layouts), 780px
+(single-column auth modal), 680px and 420px (tightened spacing).
+
+---
+
+## 🚢 Deployment
+
+### Netlify (live)
+
+The site is deployed at **[campus-storee.netlify.app](https://campus-storee.netlify.app)**.
+
+```bash
+npm run build
+netlify deploy --dir=dist --prod
+```
+
+### GitHub Pages
+
+```bash
+npm run build
+# push dist/ to the gh-pages branch
+```
+
+### Environment variables
+
+Set the six `VITE_FIREBASE_*` variables in your host's dashboard — the build inlines
+them into the bundle.
 
 ---
 
-## 🗺️ Roadmap
+## 📄 License
 
-- [ ] Persist orders and profile data to Firestore
-- [ ] Product search with fuzzy matching and price-range filters
-- [ ] Product image galleries and zoom
-- [ ] Admin dashboard for catalogue management
-- [ ] Deployed live demo link
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repo and create a branch: `git checkout -b feature/my-feature`
-2. Make your changes and run `npm run lint`
-3. Commit with a clear message and open a pull request
-
-If you find a bug or have an idea, open an [issue](https://github.com/shivamkumar0097/campus-store/issues).
-
----
+Released under the [MIT License](LICENSE).
 
 <div align="center">
-
-Built for students who’d rather shop between lectures than trek across campus. 🎒
-
-[⬆ Back to top](#-campus-store)
-
+  <sub>Built with ⚡ by <a href="https://github.com/shivamkumar0097">Shivam Kumar</a> for students.</sub>
 </div>
