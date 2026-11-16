@@ -64,8 +64,7 @@ export default function Home() {
             </h1>
             <p className="hero-lead">
               Notebooks, tech, textbooks and merch — hand-picked for college
-              life. Student prices, fast campus delivery, zero last-minute
-              panic.
+              life. Student prices, fast campus delivery, no last-minute panic.
             </p>
             <div className="hero-actions">
               <a className="btn btn-primary btn-lg" href="#/products">
