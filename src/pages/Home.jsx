@@ -40,7 +40,7 @@ const marqueeItems = [
   '7-day easy returns',
   'Campus-first picks',
   'Secure checkout',
-  'New drops every week',
+  'Fresh drops weekly',
 ]
 
 export default function Home() {
