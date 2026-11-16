@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} Campus Store. Built for students.</p>
+          <p>© {new Date().getFullYear()} Campus Store. Built by students.</p>
           <div className="footer-legal">
             <a href="#/">Privacy</a>
             <a href="#/">Terms</a>
