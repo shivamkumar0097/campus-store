@@ -59,8 +59,7 @@ export default function Cart() {
             </span>
             <h1>Your cart is empty</h1>
             <p>
-              Looks like you have not added anything yet. Grab your semester
-              essentials and come back.
+              Nothing here yet. Grab your semester essentials and come back.
             </p>
             <a className="btn btn-primary btn-lg" href="#/products">
               Start shopping
