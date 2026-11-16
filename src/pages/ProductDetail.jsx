@@ -247,7 +247,7 @@ export default function ProductDetail({ id }) {
                 <TruckIcon width="17" height="17" /> Delivered in 24–48h
               </span>
               <span>
-                <RefreshIcon width="17" height="17" /> 7-day easy returns
+                <RefreshIcon width="17" height="17" /> 7-day returns
               </span>
             </div>
           </div>
