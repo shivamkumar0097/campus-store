@@ -124,6 +124,7 @@ export default function ProductCard({ product }) {
             className={`add-btn ${added ? 'is-added' : ''}`}
             onClick={handleAdd}
             aria-label={`Add ${product.name} to cart`}
+            aria-live="polite"
           >
             {added ? (
               <>
