@@ -36,7 +36,7 @@ function GoogleIcon() {
 }
 
 const perks = [
-  'Cart synced to your account',
+  'Cart saved to your account',
   'Faster checkout every time',
   'Wishlist saved across visits',
 ]
