@@ -32,7 +32,7 @@ export default function Footer() {
             </a>
             <p>
               Student-first essentials for lectures, labs and late-night study
-              sessions. Curated on campus and delivered to your hostel door.
+              sessions. Picked on campus and delivered to your hostel door.
             </p>
             <div className="footer-socials">
               <a href="#/" aria-label="Instagram">IG</a>
