@@ -44,7 +44,7 @@ export default function Wishlist() {
             <h1>Your wishlist</h1>
             <p className="page-sub">
               {saved.length === 0
-                ? 'Tap the heart on any product to save it here.'
+                ? '              Hit the heart on any product to save it here.'
                 : `${saved.length} ${saved.length === 1 ? 'item' : 'items'} saved for later.`}
             </p>
           </div>
