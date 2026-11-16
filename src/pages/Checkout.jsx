@@ -419,8 +419,8 @@ export default function Checkout() {
               Place order · {formatPrice(payable)}
             </button>
             <p className="summary-note">
-              <SparkIcon width="14" height="14" /> Student discount is applied
-              before placing the order. No hidden charges.
+              <SparkIcon width="14" height="14" /> Save 15% with STUDENT15.
+              No hidden charges.
             </p>
           </aside>
         </form>
