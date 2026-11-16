@@ -20,7 +20,7 @@ export default function Wishlist() {
             <h1>Sign in to view your wishlist</h1>
             <p>
               Save your favourite campus essentials to your account and find
-              them here anytime.
+              them here any time.
             </p>
             <button
               type="button"
@@ -44,7 +44,7 @@ export default function Wishlist() {
             <h1>Your wishlist</h1>
             <p className="page-sub">
               {saved.length === 0
-                ? '              Hit the heart on any product to save it here.'
+                ? 'Hit the heart on any product to save it here.'
                 : `${saved.length} ${saved.length === 1 ? 'item' : 'items'} saved for later.`}
             </p>
           </div>
