@@ -3,7 +3,7 @@ export const categories = [
     name: 'Stationery',
     emoji: '✏️',
     tone: '#f59e0b',
-    blurb: 'Notes, pens & desk essentials',
+    blurb: 'Notes, pens and desk essentials',
   },
   {
     name: 'Tech Accessories',
