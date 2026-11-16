@@ -277,7 +277,7 @@ export default function Navbar({ path }) {
         </div>
 
         <p className="mobile-note">
-          Use code <strong>STUDENT15</strong> for 15% off your first order.
+          Get 15% off your first order with code <strong>STUDENT15</strong>.
         </p>
       </aside>
     </>
