@@ -25,7 +25,7 @@ const benefits = [
   {
     icon: RefreshIcon,
     title: '7-day returns',
-    text: 'Changed your mind? Send it back, no stress.',
+    text: 'Changed your mind? Send it back within 7 days, no stress.',
   },
   {
     icon: ShieldIcon,
