@@ -153,8 +153,7 @@ export default function AuthModal({ open, onClose }) {
               <span>one login away.</span>
             </h3>
             <p>
-              Sign in once and keep your cart, wishlist and campus orders
-              perfectly in sync.
+              Sign in once to keep your cart, wishlist and orders in sync.
             </p>
 
             <ul className="auth-perks">
