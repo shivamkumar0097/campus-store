@@ -173,7 +173,7 @@ export default function Checkout() {
             </span>
             <h1>Checkout</h1>
             <p className="page-sub">
-              Two minutes and your campus essentials are on the way.
+              Your campus essentials are just a few steps away.
             </p>
           </div>
           <a className="text-link" href="#/cart">
