@@ -244,7 +244,7 @@ export default function ProductDetail({ id }) {
 
             <div className="detail-perks">
               <span>
-                <TruckIcon width="17" height="17" /> Delivered in 24–48 hours
+                <TruckIcon width="17" height="17" /> Campus delivery in 24–48 hours
               </span>
               <span>
                 <RefreshIcon width="17" height="17" /> 7-day returns
