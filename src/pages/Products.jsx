@@ -71,7 +71,7 @@ export default function Products({ params }) {
             <h1>Shop all essentials</h1>
             <p className="page-sub">
               {products.length} hand-picked products across four categories.
-              Student-approved, budget-friendly.
+              Student-approved and budget-friendly.
             </p>
           </div>
           <div className="page-head-stat">
