@@ -93,7 +93,7 @@ export default function Checkout() {
               Order <strong>{placed.id}</strong> is confirmed with {placed.count}{' '}
               {placed.count === 1 ? 'item' : 'items'} for{' '}
               <strong>{formatPrice(placed.total)}</strong>. A receipt is on its
-              way to your inbox.
+              way to your inbox. Happy studying!
             </p>
             <div className="success-meta">
               <span>
