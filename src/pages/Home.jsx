@@ -93,7 +93,7 @@ export default function Home() {
                   ))}
                   <strong>4.8/5</strong>
                 </span>
-                <p>Loved by 2,000+ students on campus</p>
+                <p>Loved by 2,000+ students across campus</p>
               </div>
             </div>
           </div>
