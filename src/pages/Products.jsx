@@ -4,7 +4,7 @@ import ProductCard from '../components/ProductCard'
 import { CloseIcon, SearchIcon, SparkIcon } from '../components/Icons'
 
 const sortOptions = [
-  { value: 'popular', label: 'Most popular' },
+  { value: 'popular', label: 'Popular first' },
   { value: 'price-low', label: 'Price: low to high' },
   { value: 'price-high', label: 'Price: high to low' },
   { value: 'rating', label: 'Top rated' },
@@ -71,7 +71,7 @@ export default function Products({ params }) {
             <h1>Shop all essentials</h1>
             <p className="page-sub">
               {products.length} hand-picked products across four categories.
-              Student-approved and budget-friendly.
+              Student-approved, budget-friendly and ready to ship.
             </p>
           </div>
           <div className="page-head-stat">
