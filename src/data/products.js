@@ -9,7 +9,7 @@ export const categories = [
     name: 'Tech Accessories',
     emoji: '🎧',
     tone: '#6366f1',
-    blurb: 'Gear that keeps you powered',
+    blurb: 'Gear that keeps you charged',
   },
   {
     name: 'Books',
