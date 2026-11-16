@@ -219,7 +219,7 @@ export default function Cart() {
               <strong>{formatPrice(total)}</strong>
             </div>
             <p className="summary-note">
-              Taxes included. Student code can be applied at checkout.
+              Taxes included. Apply STUDENT15 at checkout.
             </p>
             <a className="btn btn-primary btn-lg summary-cta" href="#/checkout">
               Proceed to checkout
