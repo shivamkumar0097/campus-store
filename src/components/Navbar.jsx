@@ -86,7 +86,7 @@ export default function Navbar({ path }) {
         <div className="container announce-inner">
           <span>
             <SparkIcon width="14" height="14" />
-            Free campus delivery on orders above ₹499
+            Free campus delivery above ₹499
           </span>
           <span className="announce-code">
             Student code: <strong>STUDENT15</strong>
