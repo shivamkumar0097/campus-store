@@ -80,7 +80,7 @@ export default function Footer() {
             </form>
             {joined && (
               <p className="news-success">
-                You are in. Watch your inbox for student drops.
+                You are in. Watch your inbox for campus drops.
               </p>
             )}
           </div>
