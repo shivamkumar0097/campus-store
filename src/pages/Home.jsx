@@ -63,7 +63,7 @@ export default function Home() {
               <span className="accent-text">One store.</span>
             </h1>
             <p className="hero-lead">
-              Notebooks, tech, textbooks and merch — hand-picked for college
+              Notebooks, tech, textbooks and merch — hand-picked for campus
               life. Student prices, fast campus delivery, no last-minute panic.
             </p>
             <div className="hero-actions">
