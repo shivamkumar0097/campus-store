@@ -10,12 +10,23 @@ const sortOptions = [
   { value: 'rating', label: 'Top rated' },
 ]
 
+const priceRanges = [
+  { id: 'any', label: 'Any price', min: 0, max: Infinity },
+  { id: 'under-200', label: 'Under ₹200', min: 0, max: 199 },
+  { id: '200-600', label: '₹200 – ₹600', min: 200, max: 600 },
+  { id: 'over-600', label: 'Above ₹600', min: 601, max: Infinity },
+]
+
 export default function Products({ params }) {
   const activeCategory = params.get('category') || 'All'
   const [query, setQuery] = useState('')
   const [sort, setSort] = useState('popular')
+  const [priceRange, setPriceRange] = useState('any')
+  const [saleOnly, setSaleOnly] = useState(false)
 
   const categoryNames = ['All', ...categories.map((category) => category.name)]
+  const activeRange =
+    priceRanges.find((range) => range.id === priceRange) ?? priceRanges[0]
 
   const filtered = useMemo(() => {
     const search = query.trim().toLowerCase()
@@ -26,7 +37,10 @@ export default function Products({ params }) {
         !search ||
         product.name.toLowerCase().includes(search) ||
         product.category.toLowerCase().includes(search)
-      return matchesCategory && matchesSearch
+      const matchesPrice =
+        product.price >= activeRange.min && product.price <= activeRange.max
+      const matchesSale = !saleOnly || Boolean(product.oldPrice)
+      return matchesCategory && matchesSearch && matchesPrice && matchesSale
     })
 
     list = [...list]
@@ -34,7 +48,16 @@ export default function Products({ params }) {
     if (sort === 'price-high') list.sort((a, b) => b.price - a.price)
     if (sort === 'rating') list.sort((a, b) => b.rating - a.rating)
     return list
-  }, [activeCategory, query, sort])
+  }, [activeCategory, activeRange, query, saleOnly, sort])
+
+  const activeFilters =
+    (priceRange !== 'any' ? 1 : 0) + (saleOnly ? 1 : 0) + (query ? 1 : 0)
+
+  const clearFilters = () => {
+    setPriceRange('any')
+    setSaleOnly(false)
+    setQuery('')
+  }
 
   return (
     <div className="page">
@@ -116,6 +139,42 @@ export default function Products({ params }) {
           })}
         </div>
 
+        <div className="filter-bar">
+          <div className="filter-group">
+            <span className="filter-label">Price</span>
+            <div className="filter-chips">
+              {priceRanges.map((range) => (
+                <button
+                  key={range.id}
+                  type="button"
+                  className={`filter-chip ${
+                    priceRange === range.id ? 'active' : ''
+                  }`}
+                  onClick={() => setPriceRange(range.id)}
+                  aria-pressed={priceRange === range.id}
+                >
+                  {range.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <label className="filter-toggle">
+            <input
+              type="checkbox"
+              checked={saleOnly}
+              onChange={(event) => setSaleOnly(event.target.checked)}
+            />
+            <span>On sale only</span>
+          </label>
+
+          {activeFilters > 0 && (
+            <button type="button" className="filter-clear" onClick={clearFilters}>
+              Clear filters ({activeFilters})
+            </button>
+          )}
+        </div>
+
         {filtered.length > 0 ? (
           <div className="product-grid product-grid-shop">
             {filtered.map((product) => (
@@ -130,11 +189,17 @@ export default function Products({ params }) {
             <h2>No products found</h2>
             <p>
               Nothing matched “{query}” in this category. Try a different search
-              or browse all products.
+              or reset your filters to browse everything.
             </p>
-            <a className="btn btn-primary" href="#/products">
-              Browse all products
-            </a>
+            {activeFilters > 0 ? (
+              <button type="button" className="btn btn-primary" onClick={clearFilters}>
+                Clear filters
+              </button>
+            ) : (
+              <a className="btn btn-primary" href="#/products">
+                Browse all products
+              </a>
+            )}
           </div>
         )}
       </div>
