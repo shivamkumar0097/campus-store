@@ -3890,3 +3890,20 @@ body {
     font-size: 17px;
   }
 }
+
+/* Recently viewed */
+@media (max-width: 720px) {
+  .recent-grid {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+  }
+
+  .recent-grid .product-card {
+    flex: 0 0 190px;
+    scroll-snap-align: start;
+  }
+}

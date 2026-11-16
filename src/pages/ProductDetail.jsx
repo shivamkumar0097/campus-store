@@ -5,6 +5,7 @@ import { useAuth } from '../context/AuthContext'
 import { useCart } from '../context/CartContext'
 import { useWishlist } from '../context/WishlistContext'
 import { useToast } from '../context/ToastContext'
+import { useRecentlyViewed } from '../hooks/useRecentlyViewed'
 import ProductCard from '../components/ProductCard'
 import {
   ArrowIcon,
@@ -23,11 +24,16 @@ export default function ProductDetail({ id }) {
   const { addItem } = useCart()
   const { isWishlisted, toggleWishlist } = useWishlist()
   const { showToast } = useToast()
+  const { recordView } = useRecentlyViewed()
   const [quantity, setQuantity] = useState(1)
   const [added, setAdded] = useState(false)
   const timer = useRef(null)
 
   useEffect(() => () => window.clearTimeout(timer.current), [])
+
+  useEffect(() => {
+    if (product) recordView(product.id)
+  }, [product, recordView])
 
   if (!product) {
     return (

@@ -1,4 +1,5 @@
-import { categories, featuredProducts, products } from '../data/products'
+import { categories, featuredProducts, getProductById, products } from '../data/products'
+import { useRecentlyViewed } from '../hooks/useRecentlyViewed'
 import ProductCard from '../components/ProductCard'
 import {
   ArrowIcon,
@@ -43,6 +44,9 @@ const marqueeItems = [
 ]
 
 export default function Home() {
+  const { ids } = useRecentlyViewed()
+  const recent = ids.map(getProductById).filter(Boolean).slice(0, 6)
+
   return (
     <>
       <section className="hero">
@@ -207,6 +211,29 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {recent.length > 0 && (
+        <section className="section section-tight">
+          <div className="container">
+            <div className="section-head">
+              <div>
+                <span className="section-eyebrow">Pick up where you left</span>
+                <h2>Recently viewed</h2>
+              </div>
+              <a className="text-link" href="#/products">
+                Shop all
+                <ArrowIcon width="16" height="16" />
+              </a>
+            </div>
+
+            <div className="product-grid recent-grid">
+              {recent.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="promo-section">
         <div className="container">
