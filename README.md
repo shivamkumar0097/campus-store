@@ -71,7 +71,7 @@ curated for campus life.
 | 📱 | **Responsive** | Mobile drawer nav, fluid grids, 16px fields (no iOS zoom) |
 | ♿ | **Accessible** | Focus outlines, `prefers-reduced-motion`, ARIA roles on tabs/dialogs/toggles |
 | 🌗 | **Dark theme** | Lime `#c8f75c` on `#08080c`, violet secondary, per-category accent tints |
-| 🧭 | **Hash routing** | Zero-config static hosting — no server rewrite rules needed |
+| 🧭 | **Hash routing** | Zero-config static deploy — no server rewrite rules needed |
 
 ---
 
