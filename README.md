@@ -12,7 +12,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-c8f75c?style=flat-square)](LICENSE)
 
 A student-first e-commerce storefront — stationery, tech, textbooks and college merch,
-hand-picked for campus life.
+curated for campus life.
 
 [🚀 Live Demo](https://campus-storee.netlify.app) · [🐛 Report Issue](https://github.com/shivamkumar0097/campus-store/issues) · [💬 Discussions](https://github.com/shivamkumar0097/campus-store/discussions)
 
