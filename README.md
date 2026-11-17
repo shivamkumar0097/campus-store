@@ -22,7 +22,7 @@ curated for campus life.
 
 ## 📸 Screenshots
 
-### Landing page
+### Landing
 
 ![Home page](docs/screenshots/01-home-hero.png)
 
