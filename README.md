@@ -66,7 +66,7 @@ curated for campus life.
 | 🎁 | **Free delivery meter** | Progress bar nudging "add ₹X more for free campus delivery" (₹499+) |
 | 💖 | **Wishlist** | Save any product in one tap, persisted per account |
 | 🔐 | **Auth** | Email/password + Google login (Firebase Auth) |
-| 🧾 | **Checkout** | Delivery details, UPI/Card/COD, coupon `STUDENT15` (15% off), order confirmation |
+| 🧾 | **Checkout** | Shipping details, UPI/Card/COD, coupon `STUDENT15` (15% off), order confirmation |
 | 🔔 | **Toasts** | Custom toast system, `aria-live="polite"", auto-dismiss 2.6s |
 | 📱 | **Responsive** | Mobile drawer nav, fluid grids, 16px inputs (no iOS zoom) |
 | ♿ | **Accessible** | Focus rings, `prefers-reduced-motion`, ARIA roles on tabs/dialogs/toggles |
