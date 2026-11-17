@@ -62,7 +62,7 @@ curated for campus life.
 | 🔍 | **Live search** | Instant filter on product or category, with clear button |
 | ↕️ | **Sorting** | Most popular · Price low→high · Price high→low · Top rated |
 | 🗂️ | **Category tabs** | Deep-linkable via `?category=`, shareable URLs |
-| 🛒 | **Cart** | Quantity stepper, remove, live subtotal + delivery logic |
+| 🛒 | **Cart** | Quantity stepper, remove, live subtotal + shipping logic |
 | 🎁 | **Free delivery meter** | Progress bar nudging "add ₹X more for free campus delivery" (₹499+) |
 | 💖 | **Wishlist** | Save any product with one tap, persisted per account |
 | 🔐 | **Auth** | Email/password + Google sign-in (Firebase Auth) |
