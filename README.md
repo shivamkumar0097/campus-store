@@ -2,7 +2,7 @@
 
 # ⚡ Campus Store
 
-**Everything campus. One store.**
+**Everything campus. One shop.**
 
 [![Live Site](https://img.shields.io/badge/Live%20Site-campus--storee.netlify.app-00c7b8?style=flat-square&logo=netlify&logoColor=white)](https://campus-storee.netlify.app)
 [![Netlify Status](https://img.shields.io/badge/Netlify-Deploy%20%23prod-00c7b8?style=flat-square&logo=netlify&logoColor=white)](https://app.netlify.com/projects/campus-storee)
