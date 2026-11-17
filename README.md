@@ -69,7 +69,7 @@ curated for campus life.
 | 🧾 | **Checkout** | Shipping details, UPI/Card/COD, coupon `STUDENT15` (15% off), order confirmation |
 | 🔔 | **Toasts** | Custom toast system, `aria-live="polite"", auto-dismiss 2.6s |
 | 📱 | **Responsive** | Mobile drawer nav, fluid grids, 16px fields (no iOS zoom) |
-| ♿ | **Accessible** | Focus rings, `prefers-reduced-motion`, ARIA roles on tabs/dialogs/toggles |
+| ♿ | **Accessible** | Focus outlines, `prefers-reduced-motion`, ARIA roles on tabs/dialogs/toggles |
 | 🌗 | **Dark theme** | Lime `#c8f75c` on `#08080c`, violet secondary, per-category accent tints |
 | 🧭 | **Hash routing** | Zero-config static hosting — no server rewrite rules needed |
 
