@@ -59,7 +59,7 @@ curated for campus life.
 | | Feature | Details |
 |---|---|---|
 | 🛍️ | **Catalogue** | 20 products across 4 categories — Stationery, Tech Accessories, Books, College Merch |
-| 🔍 | **Live search** | Instant filter on product name or category, with clear button |
+| 🔍 | **Live search** | Instant filter on product or category, with clear button |
 | ↕️ | **Sorting** | Most popular · Price low→high · Price high→low · Top rated |
 | 🗂️ | **Category tabs** | Deep-linkable via `?category=`, shareable URLs |
 | 🛒 | **Cart** | Quantity stepper, remove, live subtotal + delivery logic |
